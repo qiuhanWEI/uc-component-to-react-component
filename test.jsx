@@ -1,1 +1,2 @@
-React.createElement("div", { className: 1 });
+var React = require("react/addons");
+React.createElement("foo", 1);
