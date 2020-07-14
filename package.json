@@ -39,7 +39,7 @@
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.16.0",
     "fbjs-scripts": "^0.7.1",
-    "jest": "^24.9.0"
+    "jest": "^26.1.0"
   },
   "bin": {
     "react-codemod": "./bin/react-codemod.js"
