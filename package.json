@@ -8,7 +8,10 @@
     "test": "jest",
     "lint": "eslint .",
     "prepublish": "npm run lint && npm run test",
-    "jscodeshift": "jscodeshift"
+    "jscodeshift": "jscodeshift",
+    "dev": "node --inspect-brk ./node_modules/jscodeshift/bin/jscodeshift.sh -t ./transforms/create-element-to-jsx.js test.jsx --run-in-band ",
+    "transCom": "node --inspect-brk ./node_modules/jscodeshift/bin/jscodeshift.sh -t ./transforms/uc-comp-to-react-comp.js TransComp.jsx --run-in-band ",
+    "trans": " jscodeshift -t ./transforms/uc-comp-to-react-comp.js TransComp.jsx"
   },
   "dependencies": {
     "chalk": "^2.4.2",
@@ -37,6 +40,7 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "eslint": "^6.6.0",
+    "eslint-plugin-demofortutorial-qh": "0.0.6",
     "eslint-plugin-react": "^7.16.0",
     "fbjs-scripts": "^0.7.1",
     "jest": "^26.1.0"

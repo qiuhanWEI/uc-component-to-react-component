@@ -154,7 +154,6 @@ module.exports = function (file, api, options) {
     (node.type === "Identifier" && /^[a-z]/.test(node.name));
 
   const convertNodeToJSX = (node) => {
-    debugger;
     const comments = node.value.comments || [];
     const { callee } = node.value;
     for (const calleeNode of [callee, callee.object, callee.property]) {

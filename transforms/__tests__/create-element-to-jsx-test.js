@@ -188,7 +188,6 @@ describe('create-element-to-jsx', () => {
   it('throws when it does not recognize a property type', () => {
     const jscodeshift = require('jscodeshift');
     const transform = require('../../transforms/create-element-to-jsx');
-    debugger;
     const source = `
       var React = require("react/addons");
       React.createElement("foo", 1)
