@@ -6,6 +6,8 @@
   "repository": "reactjs/react-codemod",
   "scripts": {
     "test": "jest",
+    "testUc": "jest ./transforms/__tests__/uc-comp-to-react-comp-test.js ",
+    "testSort": "jest ./transforms/__tests__/sort-comp-test.js ",
     "lint": "eslint .",
     "prepublish": "npm run lint && npm run test",
     "jscodeshift": "jscodeshift",

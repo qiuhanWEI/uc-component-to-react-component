@@ -311,7 +311,6 @@ module.exports = function (file, api, options) {
   };
 
   const changeOldCompName = (oldName, newName) => {
-    debugger;
     root
       .find(j.JSXIdentifier, { name: oldName })
       .filter(

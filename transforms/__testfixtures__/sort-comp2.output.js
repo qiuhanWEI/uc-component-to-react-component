@@ -24,7 +24,7 @@ class MyComponent extends React.Component {
     // should come before renderFoo
   }
 
-  renderFoo() {
+  renderFoo () {
     // other render* function
   }
 
